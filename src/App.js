@@ -5,6 +5,8 @@ import NavBar from "./Components/NavBar/NavBar";
 import PostList from "./Containers/PostList/PostList";
 import PostInfo from "./Containers/PostInfo/PostInfo";
 import EditPost from "./Containers/EditPost/EditPost";
+import AboutPost from "./Containers/AboutPost/AboutPost";
+import ContactsPost from "./Containers/ContactsPost/ContactsPost"
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
             <Route path="/posts/add" component={AddPost}/>
             <Route exact path="/posts/:id/edit" component={EditPost}/>
             <Route path="/posts/:id" component={PostInfo}/>
+            <Route path="/about" component={AboutPost}/>
+            <Route path="/contacts" component={ContactsPost}/>
           </Switch>
         </div>
       </BrowserRouter>
